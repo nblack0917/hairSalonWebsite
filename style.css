@@ -127,11 +127,19 @@ nav a:hover {
     padding: 10px;
 }
 
+.orange-text {
+    color: #b63700;
+}
+
 .textbox-2 {
     background-color: #3f3f47;
     padding: 10px;
     color: white;
     margin: 10px 0;
+}
+
+.textbox-3  h2 {
+    line-height: 1.2em;
 }
 
 .textbox-3 {
@@ -202,6 +210,7 @@ nav a:hover {
     background-color: #3f3f47;
     margin: 0;
     position: relative;
+    /* bottom: 40; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -210,7 +219,7 @@ nav a:hover {
 .small-text {
     position: absolute;
     left: 20px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .social-media {
@@ -218,7 +227,7 @@ nav a:hover {
     margin-right: 20px;
 }
 
-.social-media  img{
+.social-media img{
     height: 100%;
     margin: 0 20px;
 }
@@ -295,16 +304,21 @@ nav a:hover {
         font-size: 1.25em;
     }
     .footer-box {
+        position: absolute;
+        left: 0;
+        bottom: 80;
         justify-content: center;
-        height: 120px;
+        height: 80px;
     }
     .social-media{
         margin-top: -25px;
+        height: 35px;
     }
     .small-text {
         position: initial;
         display: block;
         text-align: center;
-        margin-top: 15px;
+        font-size: .75em;
+        margin-top: 10px;
     }
 }

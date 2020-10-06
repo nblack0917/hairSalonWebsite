@@ -15,3 +15,27 @@ window.addEventListener('scroll', function(){
 	// saves the new position for iteration.
 	scrollPos = (document.body.getBoundingClientRect()).top;
 });
+
+let imgSrc = "";
+
+const setImgDetail = (element) => {
+      document.getElementById("gallery-container").style.display = "none";
+      document.getElementById("detail-container").style.display = "flex";
+      imgSrc = element.src
+      window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          }); 
+      document.getElementById("image-detail").src = imgSrc;
+}
+
+const closeImgDetail = () => {
+      document.getElementById("gallery-container").style.display = "flex";
+      document.getElementById("detail-container").style.display = "none";
+      document.getElementById("image-detail").style.filter = "grayscale(100)";
+}
+
+const addColor = () => {
+      document.getElementById("image-detail").style.filter = "none";
+}
