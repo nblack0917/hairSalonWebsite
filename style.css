@@ -2,6 +2,8 @@
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Playfair Display SC', serif; */
 
+/* General rules */
+
 body {
     margin: 0;
 }
@@ -18,13 +20,22 @@ h2 {
     margin: 0;
 }
 
+/* Nav Rules */
+
 nav {
     width: 100%;
     height: 75px;
     background-color: #3f3f47;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 99;
     display: flex;
     justify-content: flex-end;
+    transition: height 200ms linear;
+}
+
+nav.scroll-down {
+    height: 0;
 }
 
 nav > object {
@@ -36,13 +47,38 @@ nav > object {
 
 }
 
-nav > a {
+nav  a {
     text-decoration: none;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
-    margin: 30px 20px;
+    display: inline-block;
+    margin: 0 20px;
+}
 
+nav a:hover {
+    opacity: .7;
+}
+
+#nav-links {
+    margin: 30px 20px;
+    visibility: visible;
+
+}
+
+/* Main rules */
+/* Top section */
+
+.logo {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.logo > object {
+    height: 100%;
 }
 
 #main-image {
@@ -54,7 +90,7 @@ nav > a {
     height: 0;
     padding-top: 40%;
     position: relative;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .main-container {
@@ -75,6 +111,7 @@ nav > a {
     align-items: flex-start;
     justify-content: center;
     grid-column-start: 3;
+    margin-right: 20px;
 }
 
 .textbox-1 {
@@ -93,6 +130,19 @@ nav > a {
     margin: 10px 0;
 }
 
+.textbox-3 {
+    background-color: #3f3f47;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    display: none;
+    font-size: 1em;
+    width: 90%;
+}
+
+
+
+
 .button {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
@@ -100,4 +150,93 @@ nav > a {
     color: white;
     padding: 20px;
     margin: 20px 0;
+}
+
+/* bottom section */
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;;
+    width: 90%;
+}
+
+.image-box {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.image-box img {
+    filter: grayscale(100);
+    border: 2px solid black;
+    opacity: .8;
+    width: 100%
+}
+
+.image-box img:hover {
+    opacity: 1;
+}
+
+/* footer section */
+
+.footer-box {
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: #3f3f47;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.small-text {
+    position: absolute;
+    left: 20px;
+    margin-top: 25px;
+}
+
+.social-media {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.social-media  img{
+    height: 100%;
+    margin: 0 20px;
+}
+
+.social-media img:hover {
+    opacity: .7;
+}
+
+@media (max-width: 1045px) {
+    .main-container {
+        grid-template-columns: 1fr 20px 1.5fr;
+    }
+    .second-container {
+        flex-wrap: wrap;
+    }
+    .image-box {
+        margin-bottom: 20px;
+    }
+    #main-image {
+        margin-bottom: 20px;
+    }
+    .textbox-1 > h1 {
+        font-size: 1.5em;
+    }
+    .textbox-2 {
+        display: none;
+    }
+    .textbox-3 {
+        display: block;
+        min-width: 350px;
+    }
+    .button {
+        padding: 15px;
+    }
 }
