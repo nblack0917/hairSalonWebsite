@@ -69,7 +69,7 @@ nav a:hover {
 /* Main rules */
 /* Top section */
 
-.logo {
+#logo {
     margin-top: 100px;
     width: 100%;
     display: flex;

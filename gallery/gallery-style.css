@@ -86,12 +86,18 @@
         width: 700px;
         max-height: 3600px;
     }
+    #detail-container {
+        width: 700px;
+    }
     .gallery-image {
         width: 48%;
     }
 }
 
 @media (max-width: 699px) {
+    h1{
+        font-size: 1.75em;
+    }
     #gallery-container {
         width: 350px;
         max-height: fit-content;
@@ -99,6 +105,18 @@
         margin-bottom: 40px;
     }
     .gallery-image {
-        width: 100%
+        width: 100%;
+    }
+    #detail-container {
+        width: 350px;
+       
+    }
+    #image-detail {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .detail-text {
+        width: 90%;
+        margin-top: -15px;
     }
 }

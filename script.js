@@ -22,6 +22,7 @@ const setImgDetail = (element) => {
       document.getElementById("gallery-container").style.display = "none";
       document.getElementById("detail-container").style.display = "flex";
       imgSrc = element.src
+      document.getElementById("logo").style.height = "100px"
       window.scroll({
             top: 0,
             left: 0,
@@ -34,6 +35,12 @@ const closeImgDetail = () => {
       document.getElementById("gallery-container").style.display = "flex";
       document.getElementById("detail-container").style.display = "none";
       document.getElementById("image-detail").style.filter = "grayscale(100)";
+      document.getElementById("logo").style.height = "250px"
+      window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          }); 
 }
 
 const addColor = () => {
