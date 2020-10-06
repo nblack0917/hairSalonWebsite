@@ -74,7 +74,7 @@ nav a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 150px;
+    height: 250px;
 }
 
 .logo > object {
@@ -114,6 +114,10 @@ nav a:hover {
     margin-right: 20px;
 }
 
+.textbox-5 {
+    display: none;
+}
+
 .textbox-1 {
     background-color: white;
     margin: 10px 0;
@@ -140,6 +144,16 @@ nav a:hover {
     width: 90%;
 }
 
+.textbox-4 {
+    background-color: #3f3f47;
+    color: white;
+    padding: 10px;
+    margin: 0 0 20px;
+    display: none;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
 
 
 
@@ -238,5 +252,59 @@ nav a:hover {
     }
     .button {
         padding: 15px;
+    }
+}
+
+@media (max-width: 699px) {
+    #main-image {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .main-container {
+        grid-template-columns: 3fr 20px 1fr;
+        align-items: flex-end;
+    }
+    .logo {
+        margin-bottom: 30px;;
+    }
+    .textbox-1 {
+        display: none;
+    }
+    .textbox-3 {
+        display: none;
+    }
+
+    .textbox-4 {
+        display: block;
+    }
+    .textbox-5 {
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: .8em;
+        margin: 0;
+        padding: 0;
+        border-top: 2px solid #3f3f47;
+        display: block;
+    }
+    .textbox-5 > h1 {
+        padding-bottom: 5px;
+        margin: 0;
+    }
+    .button {
+        font-size: 1.25em;
+    }
+    .footer-box {
+        justify-content: center;
+        height: 120px;
+    }
+    .social-media{
+        margin-top: -25px;
+    }
+    .small-text {
+        position: initial;
+        display: block;
+        text-align: center;
+        margin-top: 15px;
     }
 }
