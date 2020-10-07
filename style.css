@@ -93,6 +93,15 @@ nav a:hover {
     margin-top: 20px;
 }
 
+#beacon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    z-index: 2;
+}
+
 .main-container {
     position: absolute;
     top: 0;
@@ -112,6 +121,7 @@ nav a:hover {
     justify-content: center;
     grid-column-start: 3;
     margin-right: 20px;
+    z-index: 3;
 }
 
 .textbox-5 {
@@ -127,7 +137,7 @@ nav a:hover {
     padding: 10px;
 }
 
-.orange-text {
+.orange-text, .active {
     color: #b63700;
 }
 

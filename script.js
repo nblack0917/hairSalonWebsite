@@ -16,6 +16,19 @@ window.addEventListener('scroll', function(){
 	scrollPos = (document.body.getBoundingClientRect()).top;
 });
 
+// Easter Egg Function
+
+function beaconLight() {
+      let x = document.getElementById("beacon");
+      if (x.style.display == "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+      }
+}
+
+// Image Gallery functions
+
 let imgSrc = "";
 
 const setImgDetail = (element) => {

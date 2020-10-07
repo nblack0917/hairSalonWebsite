@@ -9,11 +9,12 @@
     <script src="script.js"></script>
 </head>
 <body>
+    
     <header>
         <nav id="navbar">
             <object data="./images/sdb_scissors_white.svg" type="image/svg+xml"></object>
             <div id="nav-links">
-                <a href="index.html" >Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="./about/about.html">About</a>
                 <a href="./blog/blog.html">Blog</a>
                 <a href="./gallery/gallery.html">Gallery</a>
@@ -27,12 +28,13 @@
         </section>
         
         <section>
-            <div class="textbox-5"><h1>A <span class="orange-text">Beacon</span> in the darkness</h1></div>
+            <div class="textbox-5"><h1>A <span class="orange-text" onclick="beaconLight()">Beacon</span> in the darkness</h1></div>
             <div id="main-image">
                 <div class="main-container">
+                    <img src="./images/main-img.svg" alt="Let There Be Light" id="beacon">
                     <div class="side-box">
                         <div class="textbox-1">
-                            <h1>A <span class="orange-text">Beacon</span> in the darkness</h1>
+                            <h1>A <span class="orange-text" onclick="beaconLight()">Beacon</span> in the darkness</h1>
                         </div>
                         <div class="textbox-2">
                             <h2>Redefining the barbershop</h2>
