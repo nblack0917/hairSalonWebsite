@@ -1,3 +1,15 @@
+function myFunction() {
+      var x = document.getElementById("nav-links");
+      var y = document.getElementById("navbar");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        y.className += " responsive";
+      } else {
+        x.className = "topnav";
+        y.className = "navbar";
+      }
+    }
+
 var scrollPos = 0;
 // adding scroll event
 window.addEventListener('scroll', function(){

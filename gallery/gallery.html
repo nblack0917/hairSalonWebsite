@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="gallery-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../script.js"></script>
 </head>
 <body>
     <header>
-        <nav id="navbar">
+        <nav id="navbar" class="navbar">
             <object data="../images/sdb_scissors_white.svg" type="image/svg+xml"></object>
-            <div id="nav-links">
-                <a href="../index.html" >Home</a>
-                <a href="../about/about.html">About</a>
-                <a href="../blog/blog.html">Blog</a>
-                <a href="../gallery/gallery.html" class="active">Gallery</a>
-                <a href="../contact/contact.html">Contact</a>
+            <div id="nav-links" class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="index.html">Home</a>
+                <a href="./about/about.html">About</a>
+                <a href="./blog/blog.html">Blog</a>
+                <a href="./gallery/gallery.html" class="active">Gallery</a>
+                <a href="./contact/contact.html">Contact</a>
             </div>
         </nav>
     </header>

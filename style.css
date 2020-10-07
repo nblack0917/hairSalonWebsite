@@ -22,7 +22,7 @@ h2 {
 
 /* Nav Rules */
 
-nav {
+.navbar {
     width: 100%;
     height: 75px;
     background-color: #3f3f47;
@@ -34,11 +34,11 @@ nav {
     transition: height 200ms linear;
 }
 
-nav.scroll-down {
+.navbar.scroll-down {
     height: 0;
 }
 
-nav > object {
+.navbar > object {
     height: 80%;
     fill: white;
     position: absolute;
@@ -47,7 +47,7 @@ nav > object {
 
 }
 
-nav  a {
+.topnav a {
     text-decoration: none;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -56,15 +56,18 @@ nav  a {
     margin: 0 20px;
 }
 
-nav a:hover {
+.topnav a:hover {
     opacity: .7;
 }
 
-#nav-links {
+.topnav {
     margin: 30px 20px;
     visibility: visible;
-
 }
+
+.topnav .icon {
+    display: none;
+  }
 
 /* Main rules */
 /* Top section */
@@ -137,7 +140,7 @@ nav a:hover {
     padding: 10px;
 }
 
-.orange-text, .active {
+.orange-text, a.active {
     color: #b63700;
 }
 
@@ -274,8 +277,45 @@ nav a:hover {
     }
 }
 
+
+@media screen and (max-width: 699px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+        /* float: right; */
+        display: block;
+      }
+    
+}
+@media screen and (max-width: 699px) {
+    .topnav.responsive {
+        position: relative;
+        margin: 10px 20px;
+    }
+    .topnav.responsive a.icon {
+        /* position: absolute; */
+        right: 0;
+        top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: right;
+    margin: 5px 0;
+  }
+  .navbar.responsive {
+      height: 200px;
+  }
+  .navbar.responsive.scroll-down {
+      height: 0
+  }
+  .navbar > object {
+      max-height: 60px;
+  }
+}
+
+
+
 @media (max-width: 699px) {
-    #main-image {
+        #main-image {
         margin-bottom: 0;
         margin-top: 0;
     }
