@@ -30,7 +30,7 @@ orange - #b63700
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto;
+    margin: 0 auto 40px;
 }
 
 .about-image-container {

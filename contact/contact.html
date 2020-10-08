@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Side Door</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <object data="../images/sdb_scissors_white.svg" type="image/svg+xml"></object>
+            <div id="nav-links" class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="../index.html">Home</a>
+                <a href="../about/about.html">About</a>
+                <a href="../blog/blog.html">Blog</a>
+                <a href="../gallery/gallery.html" >Gallery</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="top-cover"></div>
+        <div class="middle-cover">
+            <h1>Contact Us</h1>
+            <div class="ask-me">
+                <img src="../images/sdb_scissors_black_linebreak.svg" alt="LineBreak">
+                <h3>We'll snip your questions in the butt!</h3>
+            </div>
+        <form action="results.html" method="get">
+            <section class="form-section">
+              <div class="form-box-1">
+                <div>
+                  <!-- <label for="name">Name</label><br> -->
+                  <input type="text" name="name" id="name" placeholder="Name" required >
+                </div>
+                <div>
+                  <!-- <label for="email">Email</label><br> -->
+                  <input type="email" name="email" id="email" placeholder="E-mail Address" required>
+                </div>
+                <div>
+                  <input type="text" name="phone" id="phone" placeholder="Phone (xxx) xxx - xxxx" required>
+                </div>
+                <div>
+                  <!-- <label for="comments">Comments or Message</label><br> -->
+                  <textarea id="comments" name="comments" placeholder="Type your Comments or Message here" maxlength="500" minlength="10" required></textarea>
+                </div>
+                <div class="contact-question">
+                  <b>Prefered type of contact</b>
+                  <div class="question">
+                    <div class="type-contact">
+                      <label for="email_contact">Email</label>
+                      <input type="radio" name="contacted" id="email_contact" value="email_contact" required>
+                    </div>
+                    <div class="type-contact">
+                      <label for="phone_contact">Phone</label>
+                      <input type="radio" name="contacted" id="phone_contact" value="phone_contact">
+                    </div>
+                    <div class="type-contact">
+                        <label for="text_contact">Text</label>
+                        <input type="radio" name="contacted" id="text_contact" value="text_contact">
+                      </div>
+                      <div class="type-contact no-con">
+                        <label for="no_contact">None</label>
+                        <input type="radio" name="contacted" id="no_contact" value="no_contact">
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-box-2">
+                  <h3>Please help us serve you better by answering these survey questions</h3>
+                <div class="contact-question">
+                  <b>How did you hear about us?</b>
+                  <div class="question">
+                    <div class="check">
+                      <div>
+                          <input type="checkbox" name="walk-in" id="walk-in">
+                          <label for="walk-in">Walk-In</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" name="referral" id="referral">
+                          <label for="referral">Referral</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" name="facebook" id="facebook">
+                          <label for="facebook">Facebook</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" name="instagram" id="instagram">
+                          <label for="instagram">Instagram</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" name="other" id="other">
+                          <label for="aca">Other</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <!-- <label for="comments">Comments or Message</label><br> -->
+                    <textarea id="other_ans" name="other_ans" placeholder="If other..." maxlength="50" required></textarea>
+                  </div>
+                </div>
+                  <div class="contact-question">
+                    Would you like to join our birthday rewards club?
+                    <div class="question">       
+                      <div class="birthday">
+                        <label for="date">Birthdate</label>
+                        <input type="date" name="date" id="date" min="1930-01-01" max="2040-12-31">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-question hi-5">
+                  <div class="question">
+                    <div class="check">
+                      <div>
+                          <input type="checkbox" name="high-five" id="high-five" required>
+                          <label for="high-five">High Five upon arrival?</label>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+              </div>
+            </section>
+            <section class="submit-box">
+              <input type="submit" value="Submit">
+              <input type="reset">
+            </section>
+          </form>
+        </div>
+    </main>
+    <div class="bottom-cover"></div>
+    <footer>
+        <section class="footer-box">
+            <div class="social-media">
+                <a href="https://www.facbook.com" target="_blank"><img src="../images/facebook_logo.svg" alt="Facebook.com"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram_logo.svg" alt="Instagram.com"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="../images/pinterest_logo.svg" alt="Pinterest.com"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin_logo.svg" alt="linkedIn.com"></a>
+                <span class="small-text">© 2020 by Nick Black. All rights resevered.</span>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
