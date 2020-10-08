@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../script.js"></script>
 </head>
-<body>
+<body id="body">
     <header>
         <nav id="navbar" class="navbar">
             <object data="../images/sdb_scissors_white.svg" type="image/svg+xml"></object>
@@ -22,19 +22,18 @@
                 <a href="../about/about.html">About</a>
                 <a href="../blog/blog.html">Blog</a>
                 <a href="../gallery/gallery.html" >Gallery</a>
-                <a href="contact.html" class="active">Contact</a>
+                <a href="../contact/contact.html" class="active">Contact</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="top-cover"></div>
-        <div class="middle-cover">
+        <div class="container">
             <h1>Contact Us</h1>
             <div class="ask-me">
                 <img src="../images/sdb_scissors_black_linebreak.svg" alt="LineBreak">
-                <h3>We'll snip your questions in the butt!</h3>
+                <h3>We'll <span class="orange-text" onclick="changeBackground()">snip</span> your questions in the butt!</h3>
             </div>
-        <form action="results.html" method="get">
+        <form id="form-body" action="results.html" method="get">
             <section class="form-section">
               <div class="form-box-1">
                 <div>
@@ -73,30 +72,28 @@
                       </div>
                   </div>
                 </div>
-              </div>
-              <div class="form-box-2">
-                  <h3>Please help us serve you better by answering these survey questions</h3>
+                <h3>Please help us serve you better by answering these survey questions</h3>
                 <div class="contact-question">
                   <b>How did you hear about us?</b>
                   <div class="question">
                     <div class="check">
-                      <div>
+                      <div class="check-item">
                           <input type="checkbox" name="walk-in" id="walk-in">
                           <label for="walk-in">Walk-In</label>
                       </div>
-                      <div>
+                      <div class="check-item">
                           <input type="checkbox" name="referral" id="referral">
                           <label for="referral">Referral</label>
                       </div>
-                      <div>
-                          <input type="checkbox" name="facebook" id="facebook">
-                          <label for="facebook">Facebook</label>
+                      <div class="check-item">
+                          <input type="checkbox" name="socail-media" id="socail-media">
+                          <label for="socail-media">Social Media</label>
                       </div>
-                      <div>
-                          <input type="checkbox" name="instagram" id="instagram">
-                          <label for="instagram">Instagram</label>
+                      <div class="check-item">
+                          <input type="checkbox" name="advert" id="advert">
+                          <label for="advert">Advertisment</label>
                       </div>
-                      <div>
+                      <div class="check-item">
                           <input type="checkbox" name="other" id="other">
                           <label for="aca">Other</label>
                       </div>
@@ -126,16 +123,15 @@
                     </div>
                     </div>
                     </div>
+                    <section class="submit-box">
+                      <input type="submit" value="Submit">
+                      <input type="reset">
+                    </section>
               </div>
-            </section>
-            <section class="submit-box">
-              <input type="submit" value="Submit">
-              <input type="reset">
             </section>
           </form>
         </div>
     </main>
-    <div class="bottom-cover"></div>
     <footer>
         <section class="footer-box">
             <div class="social-media">

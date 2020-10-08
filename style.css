@@ -8,6 +8,7 @@ orange - #b63700
 
 /* General rules */
 
+
 body {
     margin: 0;
 }
@@ -24,6 +25,9 @@ h2 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
 /* Nav Rules */
 
 .navbar {
@@ -109,6 +113,56 @@ h2 {
     z-index: 2;
 }
 
+#orange-door {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    opacity: .7;
+    z-index: 3;
+}
+
+#yellow-door {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    opacity: .7;
+    z-index: 4;
+}
+
+#blue-door {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    opacity: .7;
+    z-index: 5;
+}
+
+#green-door {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    opacity: .7;
+    z-index: 5;
+}
+
+#pink-door {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    opacity: .7;
+    z-index: 5;
+}
+
 .main-container {
     position: absolute;
     top: 0;
@@ -128,7 +182,7 @@ h2 {
     justify-content: center;
     grid-column-start: 3;
     margin-right: 20px;
-    z-index: 3;
+    z-index: 8;
 }
 
 .textbox-5 {
@@ -146,6 +200,7 @@ h2 {
 
 .orange-text, a.active {
     color: #b63700;
+    z-index: 99;
 }
 
 .textbox-2 {
@@ -180,15 +235,19 @@ h2 {
     text-align: center;
 }
 
-
-
 .button {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
     background-color: #b63700;
     color: white;
-    padding: 20px;
+    padding: 20px 20px 10px;
     margin: 20px 0;
+
+}
+
+.button:hover{
+    background: #cf6639;
+    cursor: pointer;
 }
 
 /* bottom section */
@@ -327,7 +386,7 @@ h2 {
         grid-template-columns: 3fr 20px 1fr;
         align-items: flex-end;
     }
-    .logo {
+    #logo {
         margin-bottom: 30px;;
     }
     .textbox-1 {

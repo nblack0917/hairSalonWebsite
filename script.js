@@ -39,6 +39,74 @@ function beaconLight() {
       }
 }
 
+const addColor = () => {
+      document.getElementById("image-detail").style.filter = "none";
+}
+
+const changeBackground = () => {
+      document.getElementById("form-body").style.backgroundImage = "linear-gradient(to left, rgba(182, 55, 0,.6), rgba(255, 255, 255, 0)), url(./background-shop-thin.jpg)"
+}
+
+function changeDoor() {
+      console.log("click")
+      let x = Math.floor(Math.random() * 5) + 1
+      let a = document.getElementById("orange-door");
+      let b = document.getElementById("yellow-door");
+      let c = document.getElementById("blue-door");
+      let d = document.getElementById("green-door");
+      let e = document.getElementById("pink-door");
+      document.getElementById("main-image").style.backgroundImage = "url(./images/main-img-bw.jpg)"
+      // if (a.style.display == "none" && b.style.display == "none") {
+      //       c.style.display = "none"
+      //       a.style.display = "block";
+      // } else if (a.style.display == "block") {
+      //       a.style.display = "none";
+      //       b.style.display = "block";
+      // } else if (b.style.display == "block") {
+      //       b.style.display = "none";
+      //       c.style.display = "block";
+      // } else {
+      //       c.style.display = "block";
+      // }
+      switch (x) {
+            case 1:
+                  a.style.display = "block";
+                  b.style.display = "none";
+                  c.style.display = "none";
+                  d.style.display = "none";
+                  e.style.display = "none";
+                  break;
+            case 2:
+                  a.style.display = "none";
+                  b.style.display = "block";
+                  c.style.display = "none";
+                  d.style.display = "none";
+                  e.style.display = "none";
+                  break;
+            case 3:
+                  a.style.display = "none";
+                  b.style.display = "none";
+                  c.style.display = "block";
+                  d.style.display = "none";
+                  e.style.display = "none";
+                  break;
+            case 4:
+                  a.style.display = "none";
+                  b.style.display = "none";
+                  c.style.display = "none";
+                  d.style.display = "block";
+                  e.style.display = "none";
+                  break;
+            case 5:
+                  a.style.display = "none";
+                  b.style.display = "none";
+                  c.style.display = "none";
+                  d.style.display = "none";
+                  e.style.display = "block";
+                  break;
+      }
+}
+
 // Image Gallery functions
 
 let imgSrc = "";
@@ -68,6 +136,3 @@ const closeImgDetail = () => {
           }); 
 }
 
-const addColor = () => {
-      document.getElementById("image-detail").style.filter = "none";
-}
