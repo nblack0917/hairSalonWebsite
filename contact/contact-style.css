@@ -256,11 +256,15 @@ input[type="reset"]:hover {
     .form-box-1 {
         width: 290px;
     }
+    .ask-me {
+        width: 300px;
+    }
     .ask-me > img {
         width: 290px;
     }
     .ask-me > h3 {
         font-size: 1.5em;
+        text-align: center;
     }
     .form-box-1 h3 {
         font-size: 1.25em;

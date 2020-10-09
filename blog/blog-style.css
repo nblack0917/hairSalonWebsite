@@ -211,6 +211,7 @@ input[type="submit"]:hover {
     }
     .blog-image-box {
         margin: 0;
+        width: 290px;
     }
     .blog-container {
         width: 280px;
