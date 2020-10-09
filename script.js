@@ -110,18 +110,18 @@ const flipSis = () => {
 
 let imgSrc = "";
 
-const setImgDetail = (element) => {
-      document.getElementById("gallery-container").style.display = "none";
-      document.getElementById("detail-container").style.display = "flex";
-      imgSrc = element.src
-      document.getElementById("logo").style.height = "100px"
-      window.scroll({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          }); 
-      document.getElementById("image-detail").src = imgSrc;
-}
+// const setImgDetail = (element) => {
+//       document.getElementById("gallery-container").style.display = "none";
+//       document.getElementById("detail-container").style.display = "flex";
+//       imgSrc = element.src
+//       document.getElementById("logo").style.height = "100px"
+//       window.scroll({
+//             top: 0,
+//             left: 0,
+//             behavior: 'smooth'
+//           }); 
+//       document.getElementById("image-detail").src = imgSrc;
+// }
 
 const closeImgDetail = () => {
       document.getElementById("gallery-container").style.display = "flex";

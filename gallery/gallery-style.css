@@ -47,16 +47,16 @@
 }
 
 .detail-image > h5 {
-    margin-top: 0;
+    margin: 5px 0;
     text-align: center;
-    color: rgba(63, 63, 71, .6);
+    color: rgba(63, 63, 71, .7);
 }
 
 .detail-headline {
     color: white;
     background-color: #3f3f47;
     padding: 10px;
-    margin: 0 0 40px;
+    margin: 20px 0 20px;
 }
 
 #image-detail {

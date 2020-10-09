@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../script.js"></script>
+    <script src="gallery-script.js"></script>
 </head>
 <body>
     <header>
@@ -33,72 +34,72 @@
         <section class="wrapper">
             <div id="gallery-container">
                 <figure class="gallery-image" >
-                    <img src="./images/the_og.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/the_og.jpg" id="0" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-01.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/image-01.jpg" id="1" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-02.jpeg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/image-02.jpeg" id="2" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/the_musician.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/the_musician.jpg" id="3" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-03.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/image-03.jpg" id="4" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-04.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/image-04.jpg" id="5" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/the_viking.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/the_viking.jpg" id="6" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-05.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/image-05.jpg" id="7" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-06.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/image-06.jpg" id="8" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-07.jpg" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
+                    <img src="./images/image-07.jpg" id="9" alt="Hair Style" class="image"  onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-08.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-08.jpg" id="10" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-09.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-09.jpg" id="11" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-10.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-10.jpg" id="12" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-15.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-15.jpg" id="13" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-11.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-11.jpg" id="14" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-12.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-12.jpg" id="15" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-13.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-13.jpg" id="16" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
                 <figure class="gallery-image">
-                    <img src="./images/image-14.jpg" alt="Hair Style" class="image" onclick="setImgDetail(this)">
+                    <img src="./images/image-14.jpg" id="17" alt="Hair Style" class="image" onclick="setImgDetail(this)">
                 </figure>
             </div>
             <div id="detail-container">
                 <div class="detail-headline">
-                    <h1>Gallery Single Post</h1>
+                    <h1 id="headline1">Gallery Single Post</h1>
                 </div>
                 <div class="detail-image">
-                    <img src="" alt="Picture Detail" id="image-detail" onclick="closeImgDetail()">
                     <h5>Click image to return to gallery</h5>
+                    <img src="" alt="Picture Detail" id="image-detail" onclick="closeImgDetail()">
                 </div>
                 <div class="detail-headline">
                     <h1>Snip <span class="orange-text" onclick="addColor()">Snip</span> Snip</h1>
                 </div>
-                <article class="detail-text">
+                <article id="article-text" class="detail-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris cursus mattis molestie a iaculis. Sed vulputate mi sit amet mauris commodo. Quis hendrerit dolor magna eget est lorem ipsum.
                 </article>
             </div>
@@ -107,7 +108,7 @@
     <footer>
         <section class="footer-box">
             <div class="social-media">
-                <a href="https://www.facbook.com" target="_blank"><img src="../images/facebook_logo.svg" alt="Facebook.com"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook_logo.svg" alt="Facebook.com"></a>
                 <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram_logo.svg" alt="Instagram.com"></a>
                 <a href="https://www.pinterest.com" target="_blank"><img src="../images/pinterest_logo.svg" alt="Pinterest.com"></a>
                 <a href="https://www.linkedin.com" target="_blank"><img src="../images/linkedin_logo.svg" alt="linkedIn.com"></a>
