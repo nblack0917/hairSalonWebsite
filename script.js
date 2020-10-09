@@ -32,7 +32,7 @@ window.addEventListener('scroll', function(){
 
 function beaconLight() {
       let x = document.getElementById("beacon");
-      if (x.style.display == "none") {
+      if (x.style.display == "none" || x.style.display == "") {
             x.style.display = "block";
             } else {
             x.style.display = "none";
