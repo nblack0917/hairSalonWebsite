@@ -56,18 +56,6 @@ function changeDoor() {
       let d = document.getElementById("green-door");
       let e = document.getElementById("pink-door");
       document.getElementById("main-image").style.backgroundImage = "url(./images/main-img-bw.jpg)"
-      // if (a.style.display == "none" && b.style.display == "none") {
-      //       c.style.display = "none"
-      //       a.style.display = "block";
-      // } else if (a.style.display == "block") {
-      //       a.style.display = "none";
-      //       b.style.display = "block";
-      // } else if (b.style.display == "block") {
-      //       b.style.display = "none";
-      //       c.style.display = "block";
-      // } else {
-      //       c.style.display = "block";
-      // }
       switch (x) {
             case 1:
                   a.style.display = "block";
@@ -107,6 +95,17 @@ function changeDoor() {
       }
 }
 
+const turnOrange = () => {
+      let bars = document.getElementsByClassName("header-bars");
+      for(var i = 0; i < bars.length; i++){
+		bars[i].style.backgroundColor = "#b63700 ";
+	}
+}
+
+const flipSis = () => {
+      let sis = document.getElementById("scissors");
+      sis.src = "../images/sdb_logo_black_flipped.svg"
+}
 // Image Gallery functions
 
 let imgSrc = "";

@@ -249,7 +249,9 @@ input[type="reset"]:hover {
     #form-body {
         width: 100%;
         height: 1150px;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(255, 255, 255, 0)), url(./background-shop-thin.jpg);
         align-items: center;
+        background-position: center;
     }
     .form-box-1 {
         width: 290px;

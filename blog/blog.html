@@ -28,22 +28,73 @@
     </header>
     <main>
         <section id="logo">
-            <object data="../images/sdb_logo_black.svg" type="image/svg+xml"></object>
+            <img id="scissors" src="../images/sdb_logo_black.svg" alt="">
         </section>
         <section class="wrapper">
-            <div class="blog-container">
+            <div class="headline-box">
+                <h1>The <span class="orange-text" onclick="flipSis()">Side</span> Blog</h1>
+            </div>
+            <div class="blog-list-container">
                 <div class="blog-item">
-                    <div class="image-box">
-                        <img src="../images/the_viking.jpg" alt="image">
+                    <div class="blog-image-box">
+                        <img src="./images/the_viking.jpg" alt="image">
                     </div>
                     <div class="blog-summary">
-                        <h2>Headline</h2>
+                        <div class="blog-title">
+                            <h2>Even Vikings need haircuts</h2>
+                        </div>
                         <article>Spicy jalapeno bacon ipsum dolor amet salami dolore tenderloin duis andouille. Strip steak tempor filet mignon, veniam fatback lorem quis cow do pork picanha meatloaf. In reprehenderit boudin ut turkey elit aliqua duis eu in pork chop chicken spare ribs.</article>
-                        <div class="button">Read More</div>
+                        <a href="blog-page-1.html"><div class="button">Read More</div></a>
                     </div>
                 </div>
-
+                <div class="blog-item">
+                    <div class="blog-image-box">
+                        <img src="./images/oldbarbers.jpg" alt="image">
+                    </div>
+                    <div class="blog-summary">
+                        <div class="blog-title">
+                            <h2>Respect or Judgement</h2>
+                        </div>
+                        <article>Meatloaf cupidatat est, porchetta drumstick pancetta cow ut nisi tongue mollit bacon ball tip. Nisi lorem salami frankfurter dolore biltong officia turkey drumstick consectetur alcatra eiusmod.</article>
+                        <a href="blog-page-2.html"><div class="button">Read More</div></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-box">
+                        <img src="./images/straightshave.jpg" alt="image">
+                    </div>
+                    <div class="blog-summary">
+                        <div class="blog-title">
+                            <h2>Smooth as Silk</h2>
+                        </div>
+                        <article>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.</article>
+                        <a href="blog-page-3.html"><div class="button">Read More</div></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image-box">
+                        <img src="./images/oldbarbershop.jpg" alt="image">
+                    </div>
+                    <div class="blog-summary">
+                        <div class="blog-title">
+                            <h2>The new past and old future</h2>
+                        </div>
+                        <article>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd.</article>
+                        <a href="blog-page-4.html"><div class="button">Read More</div></a>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="wrapper">
+            <form action="results.html" method="get">
+                <div class="subscribe-box">
+                    <h3>Please subscribe to our blog for the latest stories and news</h3>
+                    <div class="email-row">
+                        <input type="email" name="email" id="email" placeholder="E-mail Address" required>
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
     <footer>
